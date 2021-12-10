@@ -1,4 +1,4 @@
-  text = open("/content/dinos.txt", "r").read()
+  [ text = open("/content/dinos.txt", "r").read()
 # let's install weasyprint!
 !pip install weasyprint==52.5
 
@@ -150,3 +150,5 @@ h3 {
 
   # Finally, this creates a PDF called "example.pdf" with all the above settings
 rendered_html.write_pdf('/content/example.pdf', stylesheets=[css],font_config=font_config)
+
+]
